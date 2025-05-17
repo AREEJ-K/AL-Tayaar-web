@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطيار الدولي</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="fly.jpg" alt="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="contact.html">تواصل </a></li>
+            <li><a href="booking.html">حجز</a></li>
+            <li><a href="packages.html">باقات السفر والسياحة</a></li>
+            <li><a href="index.html">الرئيسية</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="booking">
+            <h2>حجز رحلة</h2>
+                <form action="booking.php" method="post">
+
+                <label for="fullName">الاسم الكامل</label><br>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+                
+                <label for="phone">رقم الهاتف</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="email">البريد الإلكتروني</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="destinationFrom">من:</label><br>
+<select id="destinationTo" name="destinationTo" required>
+                    <option value="destination1"></option>
+                    <option value="destination1">الدمام</option>
+                    <option value="destination2">الرياض</option>
+                    <option value="destination3">جدة</option>
+                    <option value="destination4">  أبها</option>
+                </select><br><br>
+                
+                <label for="destinationTo">إلى:</label><br>
+                <select id="destinationTo" name="destinationTo" required>
+                    <option value="destination1"></option>
+                    <option value="destination1">تايلند</option>
+                    <option value="destination2">اذربيجان</option>
+                    <option value="destination3">تركيا</option>
+                    <option value="destination4">تركيا-طرابزون </option>
+                </select><br><br>
+                
+                               
+                <input type="submit" value="إرسال طلب الحجز">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
