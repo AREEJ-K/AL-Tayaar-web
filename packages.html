@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +9,69 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
+
 <body>
     <header>
         <img src="fly.jpg" alt="logo">
     </header>
     <nav>
-        <ul>
-            <li><a href="contact.html">تواصل</a></li>
-            <li><a href="booking.html">حجز</a></li>
-            <li><a href="packages.html">باقات السفر والسياحة</a></li>
-            <li><a href="index.html">الرئيسية</a></li>
-        </ul>
+
+      <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+   <li><a href="packages.html" class="active">باقات السفر والسياحة</a></li>
+    <li><a href="booking.html">حجز</a></li>
+    <li><a href="contact.html">تواصل</a></li>
+</ul>
+
     </nav>
     <main>
         <section id="packages">
             <h2>باقات السفر والسياحة</h2>
 
-<div class="container">
-            <div class="package" onclick="showPackage('تايلند.pdf')">
-                <img src="تايلند.jpg" alt="صورة باقة 1">
-    <div class="desc">تايلند</div>
+            <div class="packages-container">
 
+                <div class="package">
+                    <img src="تايلند.jpg" alt="باقة تايلند">
+                    <div class="package-content">
+                        <h3>تايلند</h3>
+                        <a href="تايلند.pdf" target="_blank">عرض التفاصيل</a>
+                    </div>
+                </div>
+
+                <div class="package">
+                    <img src="اذربيجان.jpg" alt="باقة أذربيجان">
+                    <div class="package-content">
+                        <h3>أذربيجان</h3>
+                        <a href="اذربيجان.pdf" target="_blank">عرض التفاصيل</a>
+                    </div>
+                </div>
+
+                <div class="package">
+                    <img src="تركيا.jpg" alt="باقة تركيا">
+                    <div class="package-content">
+                        <h3>تركيا</h3>
+                        <a href="تركيا.pdf" target="_blank">عرض التفاصيل</a>
+                    </div>
+                </div>
+
+                <div class="package">
+                    <img src="تركيا-طرابزون.jpg" alt="باقة تركيا - طرابزون">
+                    <div class="package-content">
+                        <h3>تركيا - طرابزون</h3>
+                        <a href="تركيا-طرابزون.pdf" target="_blank">عرض التفاصيل</a>
+                    </div>
+                </div>
 
             </div>
-            <div class="package" onclick="showPackage('اذربيجان.pdf')">
-                <img src="اذربيجان.jpg" alt="صورة باقة 2">
-    <div class="desc">اذربيجان</div>
-
-
-            </div>
-            <div class="package" onclick="showPackage('تركيا.pdf')">
-                <img src="تركيا.jpg" alt="صورة باقة 3">
-    <div class="desc">تركيا</div>
-
-
-            </div>
-            <div class="package" onclick="showPackage('تركيا-طرابزون.pdf')">
-                <img src="تركيا-طرابزون.jpg" alt="صورة باقة 4">
-    <div class="desc">تركيا-طرابزون</div>
-
-</div>
-
            
         </section>
     </main>
 
-    <script>
-        function showPackage(packageName) {
-            window.open(packageName, '_blank');
-        }
-    </script>
+  <footer>
+    <p>الطيار الدولي للسفر والسياحة</p>
+    <p>© 2024 جميع الحقوق محفوظة</p>
+</footer>
 
 
 </body>
